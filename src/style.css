@@ -1,0 +1,131 @@
+body {
+  background-color: #e8ddd4;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #2f2e41;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+
+i {
+  text-align: center;
+  font-size: 48px;
+}
+
+footer {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #2f2e41;
+}
+
+.weather-app-wraper {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 10px;
+  width: 50%;
+  height: 650px;
+  background-color: #fff;
+}
+
+.temperatureInCity {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #2f2e41;
+  margin-bottom: 0px;
+  font-size: 26px;
+}
+
+.background-image {
+  border-radius: 20px;
+}
+
+.inspirationalQuote {
+  text-align: center;
+  margin-top: 30px;
+  color: #184443;
+  font-family: "Amatic SC", cursive;
+}
+
+.fa-sun {
+  color: #b54f22;
+}
+
+.fa-cloud-sun {
+  color: #babfc0;
+}
+
+fa-cloud-rain {
+  color: #4f7a7e;
+}
+
+#current-date {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+  color: #2f2e41;
+}
+
+#weather-description {
+  font-size: 14px;
+}
+
+#celsius-icon {
+  cursor: pointer;
+  color: #6ba4a9;
+}
+
+#fahrenheit-icon {
+  cursor: pointer;
+  color: #a44a30;
+}
+
+#currentWeather-icon {
+  display: block;
+  font-size: 60px;
+  color: #d78649;
+}
+
+#forecastIcon {
+  font-size: 32px;
+}
+
+#search-form {
+  font-family: "Roboto", sans-serif;
+}
+
+#search-city {
+  margin: 50px 10px 50px 50px;
+  padding: 5px 10px;
+  border: 2px solid #7e564e;
+  border-radius: 5px;
+}
+
+#search-button {
+  color: #fff;
+  background-color: #ad766c;
+  padding: 5px 10px;
+  border: 2px solid #7e564e;
+  border-radius: 5px;
+}
+
+#search-button:hover {
+  color: #fff;
+  background-color: #7e564e;
+}
+
+#search-GPS-coordinates {
+  font-size: 35px;
+  color: #4f7a7e;
+  margin-left: 20px;
+}
+
+#search-GPS-coordinates:hover {
+  color: #36595c;
+}
