@@ -60,8 +60,21 @@ footer {
   color: #babfc0;
 }
 
-fa-cloud-rain {
+.fa-cloud-rain {
   color: #4f7a7e;
+}
+
+.projectLink {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.projectLink span,
+a {
+  color: #184443;
+  font-weight: 600;
 }
 
 #current-date {
