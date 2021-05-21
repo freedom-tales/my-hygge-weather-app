@@ -100,6 +100,12 @@ a {
   color: #2f2e41;
 }
 
+#units {
+  position: relative;
+  font-size: 16px;
+  top: -14px;
+}
+
 #celsius-icon {
   cursor: pointer;
   color: #6ba4a9;
