@@ -13,21 +13,23 @@ h2 {
   margin-bottom: 0;
 }
 
-i {
-  text-align: center;
-  font-size: 48px;
-}
-
-footer {
-  text-align: center;
-  color: #2f2e41;
+ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
 }
 
 li {
   list-style: none;
   display: block;
+  margin-left: 0;
   text-align: left;
   font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  color: #2f2e41;
 }
 
 .weather-app-wraper {
@@ -116,6 +118,7 @@ a {
 #currentWeather-icon {
   display: block;
   text-align: right;
+  margin-right: 0;
   font-size: 80px;
   color: #d78649;
 }

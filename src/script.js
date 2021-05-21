@@ -21,6 +21,7 @@ let presentDate = document.querySelector("#current-date");
 presentDate.innerHTML = currentDate();
 
 
+
 //display searchedCity&cityTemperature&cityWeatherDescription with API
 
 function searchCity(event){
