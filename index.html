@@ -33,19 +33,29 @@
         <div class="col-6">
         <img class=background-image src="images/wander.png" width="450px" />
         </div>
-        <div class="col-6">
-          <h1>TODAY</h1>
-          <p id="current-date"></p>
-        <div class=temperatureInCity>
-          <div id="search-city-output">CITY</div>
-            <div class="temperature">
-              <div class="degreeTemperature">
-                <h2><span id=current-temperature>16</span>&deg;<span id=celsius-icon>C</span>|<span id=fahrenheit-icon>F</span></h2>
+        <div class="col-6">       
+          <div class=temperatureInCity>
+            <h1 id="search-city-output">LISBON</h1>
+            <p id="current-date"></p>
+              <div class="temperature">
+                <div class="degreeTemperature">
+                  <h2><span id=current-temperature>16</span>&deg;<span id=celsius-icon>C</span>|<span id=fahrenheit-icon>F</span></h2>
+                  <div id=weather-description>SUNNY</div>
+                </div>
               </div>
-           </div>
-           <div id=weather-description>SUNNY</div>
-          <i class="fas fa-sun" id="currentWeather-icon"></i>
-        </div>
+              <div class="row">
+                <div class="col-6">
+                  <i class="fas fa-sun" id="currentWeather-icon"></i>
+                </div>
+                <div class="col-6">
+                  <ul>
+                    <li id=wind><i class="fas fa-wind"></i>2km/h</li>
+                    <li id=precipitation><i class="fas fa-umbrella"></i>0%</li>
+                    <li id=humidity><i class="fas fa-tint"></i>30%</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
           <h3 class=inspirationalQuote>
             <strong>Perfect day<div class=todaysActivity>for a Nature Walk!</div></strong>
           </h3>
@@ -54,7 +64,7 @@
       <footer>
         <div class="row" id="weather-forecast">
           <div class="col-2">
-            DAY1 <br /> 
+            TODAY <br /> 
             18&deg;|3&deg; <br />
             <i class="fas fa-cloud-sun" id="forecastIcon"></i>
           </div>

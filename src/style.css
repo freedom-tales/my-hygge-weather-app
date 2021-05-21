@@ -6,8 +6,11 @@ body {
 h1 {
   text-align: center;
   color: #2f2e41;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   font-size: 30px;
+}
+h2 {
+  margin-bottom: 0;
 }
 
 i {
@@ -18,6 +21,13 @@ i {
 footer {
   text-align: center;
   color: #2f2e41;
+}
+
+li {
+  list-style: none;
+  display: block;
+  text-align: left;
+  font-size: 14px;
 }
 
 .weather-app-wraper {
@@ -47,7 +57,14 @@ footer {
   text-align: center;
   margin-top: 30px;
   color: #184443;
+  font-size: 36px;
   font-family: "Amatic SC", cursive;
+}
+
+.fa-wind,
+.fa-umbrella,
+.fa-tint {
+  font-size: 16px;
 }
 
 .fa-sun {
@@ -81,10 +98,6 @@ a {
   color: #2f2e41;
 }
 
-#weather-description {
-  font-size: 14px;
-}
-
 #celsius-icon {
   cursor: pointer;
   color: #6ba4a9;
@@ -95,9 +108,15 @@ a {
   color: #a44a30;
 }
 
+#weather-description {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 #currentWeather-icon {
   display: block;
-  font-size: 60px;
+  text-align: right;
+  font-size: 80px;
   color: #d78649;
 }
 
