@@ -3,13 +3,13 @@
 function currentDate(){  
   let currentDate = new Date();
   let weekDays = [
-    "SUN",
-    "MON",
-    "TUE",
-    "WED",
-    "THU",
-    "FRI",
-    "SAT"
+    "SUNDAY",
+    "MONDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY"
   ];
   let currentWeekDay = weekDays[currentDate.getDay()];
   let currentHours = ('0'+currentDate.getUTCHours()).slice(-2);
@@ -22,7 +22,7 @@ presentDate.innerHTML = currentDate();
 
 
 
-//display searchedCity&cityTemperature&cityWeatherDescription with API
+//display searchedCity & cityTemperature & cityWeatherDescription with API
 
 function searchCity(event){
   event.preventDefault();
@@ -38,15 +38,27 @@ function searchCity(event){
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchResult}&appid=${apiKey}&units=${units}`;
 
   function displayWeather(response) {
+    console.log(response);
     let temperature=response.data.main.temp;
     let temperatureCelsius = Math.round(response.data.main.temp);
     let weatherDescription=(response.data.weather[0].description).toUpperCase();
-        
+    let windSpeed=Math.round(response.data.wind.speed);
+    let humidity=response.data.main.humidity;   
+
     let currentTemperature = document.querySelector("#current-temperature");
     currentTemperature.innerHTML = temperatureCelsius;
   
     let currentWeather = document.querySelector("#weather-description");
     currentWeather.innerHTML = weatherDescription;
+
+    let currentWeatherIcon=document.querySelector("#currentWeather-icon");
+    currentWeatherIcon.setAttribute("src",`images/weather icons/${weatherDescription}.png`);
+
+    let currentWindSpeed=document.querySelector("#wind");
+    currentWindSpeed.innerHTML=windSpeed;
+
+    let currentHumidity=document.querySelector("#humidity");
+    currentHumidity.innerHTML=humidity;
 
     //convert celsius <=> fahrenheit 
     

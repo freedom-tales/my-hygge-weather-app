@@ -31,30 +31,27 @@
       </div>
       <div class="row">
         <div class="col-6">
-        <img class=background-image src="images/wander.png" width="450px" />
+          <img class=background-image src="images/wander.png" width="450px" />
         </div>
         <div class="col-6">       
-          <div class=temperatureInCity>
+          <div class=resultCity>
             <h1 id="search-city-output">LISBON</h1>
             <p id="current-date"></p>
-              <div class="temperature">
-                <div class="degreeTemperature">
-                  <h2><span id=current-temperature>16</span><span id=units>&deg;<span id=celsius-icon>C</span>|<span id=fahrenheit-icon>F</span></span></h2>
-                  <div id=weather-description>SUNNY</div>
-                </div>
+          </div>
+          <div class="row" id="weatherOverview">
+            <div class="col-6">
+              <img src="images/weather icons/clear sky.png" id="currentWeather-icon"></img>
+            </div>
+            <div class="col-6">
+              <h2><span id=current-temperature>16</span><span id=units>&deg;<span id=celsius-icon>C</span>|&deg;<span id=fahrenheit-icon>F</span></span></h2>
+              <div class="weatherDescription">
+                <ul>
+                  <li id=weather-description>SUNNY</li>
+                  <li><i class="fas fa-wind"></i><span id=wind>2</span>km/h</li>
+                  <li><i class="fas fa-tint"></i><span id=humidity>30</span>%</li>
+                </ul>
               </div>
-              <div class="row">
-                <div class="col-6">
-                  <i class="fas fa-sun" id="currentWeather-icon"></i>
-                </div>
-                <div class="col-6">
-                  <ul>
-                    <li id=wind><i class="fas fa-wind"></i>2km/h</li>
-                    <li id=precipitation><i class="fas fa-umbrella"></i>0%</li>
-                    <li id=humidity><i class="fas fa-tint"></i>30%</li>
-                  </ul>
-                </div>
-              </div>
+            </div>
           </div>
           <h3 class=inspirationalQuote>
             <strong>Perfect day<div class=todaysActivity>for a Nature Walk!</div></strong>
