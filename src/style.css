@@ -65,22 +65,12 @@ footer {
   font-family: "Amatic SC", cursive;
 }
 
-.fa-wind,
-.fa-umbrella,
-.fa-tint {
-  font-size: 16px;
+.weather-forecast-temp {
+  font-size: 14px;
 }
 
-.fa-sun {
-  color: #b54f22;
-}
-
-.fa-cloud-sun {
-  color: #babfc0;
-}
-
-.fa-cloud-rain {
-  color: #4f7a7e;
+.weather-forecast-temp-min {
+  opacity: 0.6;
 }
 
 .projectLink {
@@ -93,41 +83,6 @@ footer {
 a {
   color: #184443;
   font-weight: 600;
-}
-
-#current-date {
-  text-align: center;
-  font-size: 20px;
-  margin-top: 0px;
-  color: #2f2e41;
-}
-
-#units {
-  position: relative;
-  font-size: 16px;
-  top: -14px;
-}
-
-#celsius-icon {
-  cursor: pointer;
-  color: #6ba4a9;
-}
-
-#fahrenheit-icon {
-  cursor: pointer;
-  color: #a44a30;
-}
-
-#currentWeather-icon {
-  position: relative;
-  margin: 0;
-  float: right;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-#forecastIcon {
-  font-size: 32px;
 }
 
 #search-form {
@@ -162,4 +117,35 @@ a {
 
 #search-GPS-coordinates:hover {
   color: #36595c;
+}
+
+#current-date {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0px;
+  color: #2f2e41;
+}
+
+#units {
+  position: relative;
+  font-size: 16px;
+  top: -14px;
+}
+
+#celsius-icon {
+  cursor: pointer;
+  color: #6ba4a9;
+}
+
+#fahrenheit-icon {
+  cursor: pointer;
+  color: #a44a30;
+}
+
+#currentWeather-icon {
+  position: relative;
+  margin: 0;
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
 }
