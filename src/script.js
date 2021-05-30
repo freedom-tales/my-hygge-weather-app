@@ -129,3 +129,28 @@ function getCurrentPosition(event){
 
 let gpsButton = document.querySelector("#search-GPS-coordinates");
 gpsButton.addEventListener('click', getCurrentPosition);
+
+//display weather forecast
+
+function displayForecast(){
+
+  let weatherForecastElement=document.querySelector("#weather-forecast");
+
+  let weatherForecastHTML =`<div class="row">`;
+
+  let days=["TODAY", "DAY2", "DAY3","DAY4","DAY5","DAY6"];
+  days.forEach(function(day){
+
+  weatherForecastHTML =weatherForecastHTML+`
+      <div class="col-2">
+        <div class="weather-forecast-date"> ${day} </div>
+        <div class="weather-forecast-temp"><span class="weather-forecast-temp-max">18&deg;</span>|<span class="weather-forecast-temp-min">7&deg;</span></div>
+        <div class="weather-forecast-icon"><img src="images/weather icons/clear sky.png" width="44" /></div>
+      </div>`;
+  });
+  weatherForecastHTML=weatherForecastHTML + `</div>`;
+
+  weatherForecastElement.innerHTML=weatherForecastHTML;
+}
+
+displayForecast();
