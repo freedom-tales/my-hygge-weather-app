@@ -53,7 +53,7 @@ function searchCity(event){
     currentWeather.innerHTML = weatherDescription;
 
     let currentWeatherIcon=document.querySelector("#currentWeather-icon");
-    currentWeatherIcon.setAttribute("src",`http://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
+    currentWeatherIcon.setAttribute("src",`https://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
 
     let currentWindSpeed=document.querySelector("#wind");
     currentWindSpeed.innerHTML=windSpeed;
