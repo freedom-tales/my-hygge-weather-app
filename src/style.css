@@ -57,6 +57,13 @@ footer {
   border-radius: 20px;
 }
 
+.fa-wind {
+  padding-right: 5px;
+}
+.fa-tint {
+  padding-right: 10px;
+}
+
 .inspirationalQuote {
   text-align: center;
   margin-top: 30px;
@@ -140,6 +147,10 @@ a {
 #fahrenheit-icon {
   cursor: pointer;
   color: #a44a30;
+}
+
+#weatherOverview .col-6 {
+  padding: 0px;
 }
 
 #currentWeather-icon {

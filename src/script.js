@@ -36,14 +36,16 @@ function searchCity(event){
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchResult}&appid=${apiKey}&units=${units}`;
 
   function displayWeather(response) {
+    console.log(response);
     let temperature=response.data.main.temp;
     let temperatureCelsius = Math.round(response.data.main.temp);
     let weatherDescription=(response.data.weather[0].description).toUpperCase();
     let weatherIcon=response.data.weather[0].icon;
     let windSpeed=Math.round(response.data.wind.speed);
-    let humidity=response.data.main.humidity;   
+    let humidity=response.data.main.humidity;
+    let mainDescription=response.data.weather[0].main.toLowerCase();
+    console.log(mainDescription);
     
-
     let currentTemperature = document.querySelector("#current-temperature");
     currentTemperature.innerHTML = temperatureCelsius;
   
@@ -58,6 +60,9 @@ function searchCity(event){
 
     let currentHumidity=document.querySelector("#humidity");
     currentHumidity.innerHTML=humidity;
+
+    let currentWeatherImage=document.querySelector("#background-image");
+    currentWeatherImage.setAttribute("src",`images/${mainDescription}.png`);
 
   //display weather forecast for 5 days
 
@@ -77,7 +82,6 @@ function searchCity(event){
   }
   
   function displayForecast(response){
-    
     let forecast=response.data.daily;
     let weatherForecastElement=document.querySelector("#weather-forecast");
     let weatherForecastHTML =`<div class="row">`;
