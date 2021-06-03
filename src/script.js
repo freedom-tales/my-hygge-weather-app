@@ -40,7 +40,7 @@ function search(city){
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayWeather);
 }
-search("Lisbon");
+search("Zurich");
 
 function displayWeather(response) {
   let temperature=response.data.main.temp;
