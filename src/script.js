@@ -73,20 +73,6 @@ function displayWeather(response) {
   let latitude=response.data.coord.lat;
   let longitude=response.data.coord.lon;  
   getForecast(coordinates);
-
-  //convert celsius <=> fahrenheit 
-    
-  function convertToF(){
-      currentTemperature.innerHTML = Math.round((temperature*9)/5+32);
-    }
-  let fahrenheitLink = document.querySelector("#fahrenheit-icon");
-  fahrenheitLink.addEventListener("click", convertToF);
-    
-  function convertToC(){
-      currentTemperature.innerHTML = temperatureCelsius;
-    }
-  let celsiusLink = document.querySelector("#celsius-icon");
-  celsiusLink.addEventListener("click", convertToC);
 }
 
 //display weather forecast for 5 days
@@ -157,22 +143,7 @@ function displayWeatherLocation(response) {
   gpsTemperature.innerHTML = currentTemperature;
 
   let gpsWeather = document.querySelector("#weather-description");
-  gpsWeather.innerHTML = weatherDescription;
-
-
-  //convert celsius <=> fahrenheit 
-    
-  function convertToF(){
-    gpsTemperature.innerHTML = Math.round((currentTemperature*9)/5+32);
-  }
-  let fahrenheitLink = document.querySelector("#fahrenheit-icon");
-  fahrenheitLink.addEventListener("click", convertToF);
-    
-  function convertToC(){
-    gpsTemperature.innerHTML = currentTemperature;
-  }
-  let celsiusLink = document.querySelector("#celsius-icon");
-  celsiusLink.addEventListener("click", convertToC);    
+  gpsWeather.innerHTML = weatherDescription;  
 }
 
 function getCurrentPosition(event){
@@ -250,7 +221,7 @@ function showPosition(position) {
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
   let apiUrlForecast=`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
-  console.log(apiUrlForecast);
+  
   axios.get(apiUrl).then(displayWeatherLocation);
   axios.get(apiUrlForecast).then(displayGpsForecast);
 }

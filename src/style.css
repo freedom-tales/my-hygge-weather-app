@@ -138,17 +138,7 @@ a {
 #units {
   position: relative;
   font-size: 16px;
-  top: -14px;
-}
-
-#celsius-icon {
-  cursor: pointer;
-  color: #6ba4a9;
-}
-
-#fahrenheit-icon {
-  cursor: pointer;
-  color: #a44a30;
+  top: -10px;
 }
 
 #weatherOverview .col-6 {
